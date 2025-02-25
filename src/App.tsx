@@ -11,6 +11,7 @@ function App() {
                 <Field/>
                 <Field/>
                 <Field/>
+                <Checkbox/>
             </Form>
         </div>
     );
@@ -19,12 +20,13 @@ function App() {
 export default App;
 
 const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 32px;
-    span {
-        color: #e91e63;
-    }
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 32px;
+
+  span {
+    color: #e91e63;
+  }
 `;
 
 const Form = styled.form`
@@ -38,3 +40,8 @@ const Field = styled.input`
   width: 100%;
   font-size: 1rem;
 `;
+
+const Checkbox = styled.input.attrs(() => ({
+    type: 'checkbox',
+}))`
+  color: red`
