@@ -6,10 +6,8 @@ import { Menu } from "../../components/menu/Menu";
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo></Logo>
-
-            <Menu></Menu>
-
+            <Logo />
+            <Menu />
         </StyledHeader>
     );
 };
