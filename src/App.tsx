@@ -8,7 +8,7 @@ function App() {
             <Title>Styled-components <span>.attrs</span> method</Title>
 
             <Form>
-                <Field olaceholder="Hello"/>
+                <Field placeholder="Hello"/>
                 <Field type='password'/>
                 <Field/>
                 <Checkbox/>
