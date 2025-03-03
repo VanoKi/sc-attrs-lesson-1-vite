@@ -8,8 +8,8 @@ function App() {
             <Title>Styled-components <span>.attrs</span> method</Title>
 
             <Form>
-                <Field/>
-                <Field/>
+                <Field olaceholder="Hello"/>
+                <Field type='password'/>
                 <Field/>
                 <Checkbox/>
             </Form>
@@ -34,7 +34,10 @@ const Form = styled.form`
   max-width: 500px;
 `;
 
-const Field = styled.input`
+const Field = styled.input.attrs(()=>({
+    placeholder: 'Type snth...',
+    title: 'Goodbye'
+}))`
   padding: 5px 15px;
   margin: 10px 0;
   width: 100%;
@@ -45,3 +48,9 @@ const Checkbox = styled.input.attrs(() => ({
     type: 'checkbox',
 }))`
   color: red`
+
+// type fieldtype = {
+//     placeholder: 'Type smth....',
+//     titele: 'Goodbye'
+// }
+
