@@ -1,8 +1,5 @@
-import React from "react";
 import styled from "styled-components";
-import { FLexWrapper } from "../../../components/FlexWrapper";
-import { Icon } from "../../../components/icon/Icon";
-import { SectionTitle } from "../../../components/SectionTitle";
+import { Icon } from "../../../../components/icon/Icon";
 
 export const Skill = () => {
     return (
