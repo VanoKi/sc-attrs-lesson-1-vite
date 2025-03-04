@@ -33,13 +33,13 @@ const Photo = styled.img`
 `
 
 const StyledMain = styled.div`
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: yellow;
 `
 
 const MainTitle = styled.h1`
     
 `
-const Name = styled.h1`
+const Name = styled.h2`
 
 `
