@@ -7,18 +7,18 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>My Skills</SectionTitle>
-            <FLexWrapper>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
+            <FLexWrapper wrap="wrap" justify="space-between">
+                <Skill iconId={'html'} title={'html5'}/>
+                <Skill iconId={'css'} title={'css'}/>
+                <Skill iconId={'react'} title={'react'}/>
+                <Skill iconId={'ts'} title={'ts'}/>
+                <Skill iconId={'figma'} title={'figma'}/>
             </FLexWrapper>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section`
-    
+    background-color: pink;
+    /* min-height: 100vh; */
 `

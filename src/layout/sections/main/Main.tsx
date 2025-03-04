@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import photo from "./../../../assets/images/Sveta_1.webp";
 import { FLexWrapper } from "../../../components/FlexWrapper";

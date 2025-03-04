@@ -8,4 +8,5 @@ type SectionTitlePropsStyled = {
 }
 export const SectionTitle = styled.div<SectionTitlePropsStyled>`
     color: red;
+    text-align: center;
 `
