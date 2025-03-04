@@ -11,12 +11,12 @@ export const Main = () => {
                     <span>
                         Hi There
                     </span>
-                    <h2>
+                    <Name>
                         I am Svetlana Dyablo
-                    </h2>
-                    <h1>
+                    </Name>
+                    <MainTitle>
                         A Web Developer
-                    </h1>
+                    </MainTitle>
                 </div>
 
                 <Photo src={photo} alt="" />
@@ -34,7 +34,12 @@ const Photo = styled.img`
 
 const StyledMain = styled.div`
     min-height: 100vh;
+    background-color: yellow;
 `
-const StyledTextBlock = styled.div`
-    min-height: 100vh;
+
+const MainTitle = styled.h1`
+    
+`
+const Name = styled.h1`
+
 `
