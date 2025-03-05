@@ -11,7 +11,7 @@ export const Skills = () => {
                 <Skill iconId={'html'} title={'html5'}/>
                 <Skill iconId={'css'} title={'css'}/>
                 <Skill iconId={'react'} title={'react'}/>
-                <Skill iconId={'react'} title={'styled components'}/>
+                <Skill iconId={'styledComponents'} title={'styled components'}/>
                 <Skill iconId={'ts'} title={'ts'}/>
                 <Skill iconId={'figma'} title={'figma'}/>
             </FLexWrapper>

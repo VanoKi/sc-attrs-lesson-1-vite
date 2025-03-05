@@ -7,6 +7,6 @@ type SectionTitlePropsStyled = {
     wrap?: string
 }
 export const SectionTitle = styled.h2<SectionTitlePropsStyled>`
-    color: red;
+    color: #9b0202;
     text-align: center;
 `
