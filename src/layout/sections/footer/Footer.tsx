@@ -11,6 +11,21 @@ export const Footer = () => {
                         <Icon iconId={'insta'}></Icon>
                     </SocialIconLink>
                 </SocialIconsListItem>
+                <SocialIconsListItem>
+                    <SocialIconLink>
+                        <Icon iconId={'telegram'}></Icon>
+                    </SocialIconLink>
+                </SocialIconsListItem>
+                <SocialIconsListItem>
+                    <SocialIconLink>
+                        <Icon iconId={'vk'}></Icon>
+                    </SocialIconLink>
+                </SocialIconsListItem>
+                <SocialIconsListItem>
+                    <SocialIconLink>
+                        <Icon iconId={'linkedin'}></Icon>
+                    </SocialIconLink>
+                </SocialIconsListItem>
             </SocialIconsList>
             <Copyright></Copyright>
         </StyledFooter>
@@ -18,6 +33,7 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
+    background-color: #cdcdcd;
 `
 const Name = styled.span`
 `
