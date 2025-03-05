@@ -6,9 +6,11 @@ export const Footer = () => {
         <StyledFooter>
             <Name>Svetlana</Name>
             <SocialIconsList>
-                <SocialIconLink>
-                    <Icon iconId={'insta'}></Icon>
-                </SocialIconLink>
+                <SocialIconsListItem>
+                    <SocialIconLink>
+                        <Icon iconId={'insta'}></Icon>
+                    </SocialIconLink>
+                </SocialIconsListItem>
             </SocialIconsList>
             <Copyright></Copyright>
         </StyledFooter>
@@ -20,6 +22,8 @@ const StyledFooter = styled.footer`
 const Name = styled.span`
 `
 const SocialIconsList = styled.ul`
+`
+const SocialIconsListItem = styled.li`
 `
 const SocialIconLink = styled.a`
 `
