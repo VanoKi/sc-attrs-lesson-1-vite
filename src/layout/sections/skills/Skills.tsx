@@ -11,6 +11,7 @@ export const Skills = () => {
                 <Skill iconId={'html'} title={'html5'}/>
                 <Skill iconId={'css'} title={'css'}/>
                 <Skill iconId={'react'} title={'react'}/>
+                <Skill iconId={'react'} title={'styled components'}/>
                 <Skill iconId={'ts'} title={'ts'}/>
                 <Skill iconId={'figma'} title={'figma'}/>
             </FLexWrapper>
@@ -19,6 +20,6 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    background-color: pink;
+    background-color: #f8d6db;
     /* min-height: 100vh; */
 `

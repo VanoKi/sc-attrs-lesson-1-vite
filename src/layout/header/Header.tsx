@@ -13,7 +13,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: greenyellow;
+    background-color: #dfffaf;
     display: flex;
     justify-content: space-between;
 `

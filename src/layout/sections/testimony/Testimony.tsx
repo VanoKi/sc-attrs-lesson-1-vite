@@ -18,6 +18,6 @@ export const Testimony = () => {
 };
 
 const StyledTestimony = styled.section`
-    background-color: violet;
+    background-color: #f3d7f3;
 `
 

@@ -33,7 +33,7 @@ const Photo = styled.img`
 
 const StyledMain = styled.div`
     /* min-height: 100vh; */
-    background-color: yellow;
+    background-color: #f8f891;
 `
 
 const MainTitle = styled.h1`

@@ -23,5 +23,5 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-    background-color: lightblue;
+    background-color: #d9f2fb;
 `

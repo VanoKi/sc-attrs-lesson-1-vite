@@ -1,12 +1,15 @@
 import styled from "styled-components"
 import { SectionTitle } from "../../../components/SectionTitle"
 import { Button } from "../../../components/Button"
+import { FLexWrapper } from "../../../components/FlexWrapper"
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
-            <SectionTitle>I Am Avaible For Freelance</SectionTitle>
-            <Button>Hire Me</Button>
+            <FLexWrapper direction="column" aline="center">
+                <SectionTitle>I Am Avaible For Freelance</SectionTitle>
+                <Button>Hire Me</Button>
+            </FLexWrapper>
         </StyledSlogan>
     )
 }
