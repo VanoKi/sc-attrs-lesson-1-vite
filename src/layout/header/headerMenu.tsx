@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Theme} from "../../styles/Theme.ts";
 
 
 export const HeaderMenu = (props: {
@@ -28,6 +29,7 @@ const StyledHeaderMenu = styled.nav`
     }
 `
 const ListItem = styled.li`
+    position: relative;
 `
 const Link = styled.a`
     font-family: "Josefin Sans", sans-serif;
@@ -36,4 +38,22 @@ const Link = styled.a`
     line-height: 110%;
     text-align: center;
     color: #7572d5;
+`
+
+const Mask = styled.span`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 50%;
+    overflow: hidden;
+    outline: 1px solid red;
+    color: ${Theme.colors.accent};
+    & + & {
+        top: 50%;
+        span {
+            display: inline-block;
+            transform: translateY(-50%);
+        }
+    }
 `
