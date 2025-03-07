@@ -1,4 +1,5 @@
 import {createGlobalStyle} from "styled-components";
+import {Theme} from "./Theme.ts";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -27,4 +28,11 @@ export const GlobalStyles = createGlobalStyle`
         background-color: unset;
         border: unset;
     }
+    section:nth-of-type(odd) {
+        background-color: ${Theme.colors.primaryBg};
+    }
+    section:nth-of-type(even) {
+        background-color: ${Theme.colors.secondaryBg};
+    }
+    
 `
