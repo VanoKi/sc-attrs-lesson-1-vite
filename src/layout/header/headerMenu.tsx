@@ -28,16 +28,14 @@ const StyledHeaderMenu = styled.nav`
         gap: 30px;
     }
 `
-const ListItem = styled.li`
-    position: relative;
-`
+
 const Link = styled.a`
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 110%;
     text-align: center;
-    color: #7572d5;
+    color: transparent;
 `
 
 const Mask = styled.span`
@@ -54,6 +52,34 @@ const Mask = styled.span`
         span {
             display: inline-block;
             transform: translateY(-50%);
+        }
+    }
+`
+
+const ListItem = styled.li`
+    position: relative;
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 3px;
+        background-color: ${Theme.colors.accent};
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        right: -10px;
+        z-index: 1;
+        transform: scale(0);
+    }
+    &:hover {
+        &::before {
+            transform: scale(1);
+        }
+        ${Mask} {
+            transform: skewX(12deg) translatex(5px);
+            color: ${Theme.colors.font};
+        }
+        & + ${Mask} {
+            transform: skewX(12deg) translatex(-5px);
         }
     }
 `
