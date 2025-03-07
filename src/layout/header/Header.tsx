@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
-import {Contacts} from "../sections/contacts/Contacts.tsx";
-import {Container} from "../../components/Container.ts";
+import {Container} from "../../components/Container.tsx";
 import {FLexWrapper} from "../../components/FlexWrapper.tsx";
+import {HeaderMenu} from "./headerMenu.tsx";
 
 const items = ['Home', 'Skils', 'Works', 'Testimony', 'Contact',]
 export const Header = () => {
@@ -12,7 +11,7 @@ export const Header = () => {
             <Container>
                 <FLexWrapper justify={'space-between'} aline={'center'}>
                     <Logo />
-                    <Menu menuItems={items}/>
+                    <HeaderMenu menuItems={items}/>
                 </FLexWrapper>
             </Container>
         </StyledHeader>
@@ -20,7 +19,9 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: #dfffaf;
-    display: flex;
-    justify-content: space-between;
+    background-color: #1F1F20;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 99;
 `
