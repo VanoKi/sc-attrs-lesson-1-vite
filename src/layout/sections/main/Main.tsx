@@ -20,8 +20,9 @@ export const Main = () => {
                             A Web Developer
                         </MainTitle>
                     </div>
-
-                    <Photo src={photo} alt="" />
+                    <PhotoWrapper>
+                        <Photo src={photo} alt="" />
+                    </PhotoWrapper>
                 </FLexWrapper>
 
             </Container>
@@ -67,4 +68,18 @@ const Name = styled.h2`
 const SmallText = styled.span`
     font-weight: 400;
     font-size: 14px;
+`
+const PhotoWrapper = styled.div`
+    position: relative;
+    z-index: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -24px;
+        left: 24px;
+        width: 360px;
+        height: 470px;
+        border: 5px solid ${Theme.colors.accent};
+    }
 `
