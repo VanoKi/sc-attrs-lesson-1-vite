@@ -50,12 +50,17 @@ const Name = styled.h2`
     letter-spacing: 0.05em;
     margin: 10px 0;
     span {
+        position: relative;
+        z-index: 0;
         &::before {
             content: "";
             display: inline-block;
             width: 100%;
             height: 20px;
             background-color: ${Theme.colors.accent};
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
         }
     }
 `
