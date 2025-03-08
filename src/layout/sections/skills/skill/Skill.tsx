@@ -24,8 +24,9 @@ const StyledSkill = styled.div`
     padding: 62px 20px 40px;
 `
 const SkillTitle = styled.h3`
-    
+    margin-top: 70px;
+    margin-bottom: 15px;
 `
 const SkillText = styled.p`
-    
+    text-align: center;
 `
