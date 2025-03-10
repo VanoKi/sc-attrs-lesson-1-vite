@@ -14,7 +14,7 @@ export const Works = () => {
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <Menu menuItems={worksItems}/>
-                <FLexWrapper justify={'space-around'}>
+                <FLexWrapper justify={'space-between'}>
                     <Work title={'Social Network'}
                             src={socialImg}/>
                     <Work title={'Timer'}
