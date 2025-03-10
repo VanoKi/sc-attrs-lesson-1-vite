@@ -5,19 +5,22 @@ import { Menu } from "../../../components/menu/Menu";
 import { Work } from "./work/Work";
 import socialImg from "./../../../assets/images/proj1.png";
 import timerImg from "./../../../assets/images/proj2.png";
+import { Container } from "../../../components/Container";
 
 const worksItems = ['All', 'Landing Page', 'React', 'SPA']
 export const Works = () => {
     return (
         <StyledWorks>
-            <SectionTitle>My Works</SectionTitle>
-            <Menu menuItems={worksItems}/>
-            <FLexWrapper justify={'space-around'}>
-                <Work title={'Social Network'}
-                        src={socialImg}/>
-                <Work title={'Timer'}
-                        src={timerImg}/>
-            </FLexWrapper>
+            <Container>
+                <SectionTitle>My Works</SectionTitle>
+                <Menu menuItems={worksItems}/>
+                <FLexWrapper justify={'space-around'}>
+                    <Work title={'Social Network'}
+                            src={socialImg}/>
+                    <Work title={'Timer'}
+                            src={timerImg}/>
+                </FLexWrapper>
+            </Container>
         </StyledWorks>
     );
 };
