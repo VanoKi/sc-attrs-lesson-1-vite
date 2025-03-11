@@ -30,6 +30,8 @@ export const GlobalStyles = createGlobalStyle`
     button {
         background-color: unset;
         border: unset;
+        color: ${Theme.colors.font};
+        cursor: pointer;
     }
     section {
         padding: 100px 0;
