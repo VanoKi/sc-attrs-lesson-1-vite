@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FLexWrapper } from "../../../components/FlexWrapper";
 import { SectionTitle } from "../../../components/SectionTitle";
-import { Menu } from "../../../components/menu/Menu";
+import { TabMenu } from "./tabMenu/TabMenu.tsx";
 import { Work } from "./work/Work";
 import socialImg from "./../../../assets/images/proj1.png";
 import timerImg from "./../../../assets/images/proj2.png";
@@ -13,7 +13,7 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <Menu menuItems={worksItems}/>
+                <TabMenu menuItems={worksItems}/>
                 <FLexWrapper justify={'space-between'}>
                     <Work title={'Social Network'}
                             src={socialImg}/>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 // type MenuPropsType = {
 //     menuItems: Array<string>
 // }
-export const Menu = (props: {
+export const TabMenu = (props: {
     menuItems: Array<string>
 }) => {
     return (
