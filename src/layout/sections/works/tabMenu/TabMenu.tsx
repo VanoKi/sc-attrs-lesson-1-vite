@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Theme} from "../../../../styles/Theme.ts";
+import {Link} from '../../../../components/Link.tsx';
 
 // type MenuPropsType = {
 //     menuItems: Array<string>
