@@ -64,6 +64,10 @@ const ImageWrapper = styled.div`
         top: 50%;
         /* bottom: 50%; */
         transform: translate(-50%, -50%);
+        &::before {
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 const Image = styled.img`
