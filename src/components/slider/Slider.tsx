@@ -31,10 +31,16 @@ const Slide = styled.div`
 
 `
 const Text = styled.p`
-    
 `
 const Name = styled.span`
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 22px 0 42px;
+    display: block;
 `
 const Pagination = styled.span`
 

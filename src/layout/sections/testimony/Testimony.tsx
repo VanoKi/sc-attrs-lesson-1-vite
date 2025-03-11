@@ -21,6 +21,8 @@ export const Testimony = () => {
 };
 
 const StyledTestimony = styled.section`
-    background-color: #f3d7f3;
+    ${IconWrapper} {
+        margin: 40px 0 72px;
+    }
 `
 
