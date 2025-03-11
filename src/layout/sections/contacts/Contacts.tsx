@@ -34,11 +34,15 @@ const StyledForm = styled.form`
 const Field = styled.input`
     width: 100%;
     background: ${Theme.colors.secondaryBg};
-    border: 1px solid #4a4a4a;
+    border: 1px solid ${Theme.colors.borderColor};
     padding: 7px 15px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.05em;
-    /* color: #495057; */
     color: ${Theme.colors.font};
+    &::placeholder {
+        color: ${Theme.colors.placeholderColor};
+        text-transform: capitalize;
+    }
 `
