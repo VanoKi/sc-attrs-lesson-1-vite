@@ -7,7 +7,7 @@ export const TabMenu = (props: {
     menuItems: Array<string>
 }) => {
     return (
-        <StyledMenu>
+        <StyledTabMenu>
             <ul>
                 {props.menuItems.map((item:string, index:number)=>{
                     return (
@@ -17,11 +17,11 @@ export const TabMenu = (props: {
                     )
                 })}
             </ul>
-        </StyledMenu>
+        </StyledTabMenu>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledTabMenu = styled.nav`
     ul {
         display: flex;
         gap: 30px;
