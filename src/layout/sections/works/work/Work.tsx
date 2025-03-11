@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Link} from "../../../../components/Link.tsx";
 import {Theme} from "../../../../styles/Theme.ts";
+import { Button } from "../../../../components/Button.tsx";
 
 type WorkPropsType = {
     title: string
@@ -12,6 +13,7 @@ export const Work = (props: WorkPropsType) => {
         <StyledWork>
             <ImageWrapper>
                 <Image src={props.src} alt=""/>
+                <Button>view project</Button>
             </ImageWrapper>
             <Description>
                 <Title>{props.title}</Title>
@@ -40,6 +42,9 @@ const StyledWork = styled.div`
 const ImageWrapper = styled.div`
     position: relative;
     &:hover {
+        ${Button} {
+            opacity: 1;
+        }
         &::before {
         content: '';
         position: absolute;
@@ -50,6 +55,15 @@ const ImageWrapper = styled.div`
         background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(4px);
         }
+    }
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        /* right: 50%; */
+        top: 50%;
+        /* bottom: 50%; */
+        transform: translate(-50%, -50%);
     }
 `
 const Image = styled.img`
