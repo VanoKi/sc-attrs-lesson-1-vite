@@ -11,9 +11,9 @@ export const TabMenu = (props: {
             <ul>
                 {props.menuItems.map((item:string, index:number)=>{
                     return (
-                        <li key={index}>
-                            <a href="#">{item}</a>
-                        </li>
+                        <TabMenuItem key={index}>
+                            <Link href="#">{item}</Link>
+                        </TabMenuItem>
                     )
                 })}
             </ul>
@@ -26,4 +26,13 @@ const StyledTabMenu = styled.nav`
         display: flex;
         gap: 30px;
     }
+`
+const TabMenuItem = styled.li`
+
+`
+const Link = styled.a`
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
 `
