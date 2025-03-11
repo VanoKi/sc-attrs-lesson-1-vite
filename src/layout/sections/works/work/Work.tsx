@@ -10,7 +10,9 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
-            <Image src={props.src} alt=""/>
+            <ImageWrapper>
+                <Image src={props.src} alt=""/>
+            </ImageWrapper>
             <Description>
                 <Title>{props.title}</Title>
                 <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, repellat repudiandae voluptates odit laboriosam sapiente debitis molestiae. Quae dolorem expedita enim labore, soluta mollitia tempora est natus dolor sed iste.
@@ -30,10 +32,25 @@ const StyledWork = styled.div`
     width: 100%
     ${Link} {
         padding: 10px 0;
-    & + ${Link} {
-        margin-left: 20px;
+        & + ${Link} {
+            margin-left: 20px;
     }
 }
+`
+const ImageWrapper = styled.div`
+    position: relative;
+    &:hover {
+        &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(4px);
+        }
+    }
 `
 const Image = styled.img`
     width: 100%;
