@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: #fff;
+        color: ${Theme.colors.font};
     }
     ul {
         list-style: none;
