@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { FLexWrapper } from "../FlexWrapper"
+import { Theme } from "../../styles/Theme"
 
 export const Slider = () => {
     return (
@@ -12,7 +13,7 @@ export const Slider = () => {
             </FLexWrapper>
             <Pagination>
                 <span> </span>
-                <span> </span>
+                <span className={`active`}> </span>
                 <span> </span>
             </Pagination>
         </StyledSlider>
@@ -43,12 +44,18 @@ const Name = styled.span`
     display: block;
 `
 const Pagination = styled.span`
-
     span {
         display: inline-block;
-        width: 10px;
-        height: 10px;
+        width: 7px;
+        height: 7px;
         margin: 5px;
-        background-color: deeppink;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        & + span {
+            margin-left: 5px;
+        }
+        &.active {
+            background: ${Theme.colors.accent};
+        }
     }
 `
