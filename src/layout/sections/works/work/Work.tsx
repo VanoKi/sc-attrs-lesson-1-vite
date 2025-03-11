@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from "../../../../components/Link.tsx";
 
 type WorkPropsType = {
     title: string
@@ -28,9 +29,9 @@ const Image = styled.img`
     height: 260px;
     object-fit: cover;
 `
-const Link = styled.a`
-
-`
+// const Link = styled.a`
+//
+// `
 const Title = styled.h4`
 
 `

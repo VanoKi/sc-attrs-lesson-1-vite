@@ -13,7 +13,9 @@ export const Works = () => {
         <StyledWorks>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu menuItems={worksItems}/>
+                <FLexWrapper justify={'center'}>
+                    <TabMenu menuItems={worksItems}/>
+                </FLexWrapper>
                 <FLexWrapper justify={'space-between'}>
                     <Work title={'Social Network'}
                             src={socialImg}/>
