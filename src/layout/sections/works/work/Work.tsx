@@ -29,8 +29,11 @@ const StyledWork = styled.div`
     max-width: 540px;
     width: 100%
     ${Link} {
-        //padding: 10px 0;
+        padding: 10px 0;
+    & + ${Link} {
+        margin-left: 20px;
     }
+}
 `
 const Image = styled.img`
     width: 100%;
@@ -41,5 +44,4 @@ const Title = styled.h4`
 `
 const Text = styled.p`
     padding: 14px 0 10px;
-    line-height: 1.4;
 `
