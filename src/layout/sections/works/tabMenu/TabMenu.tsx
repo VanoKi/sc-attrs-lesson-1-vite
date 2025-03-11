@@ -23,13 +23,15 @@ export const TabMenu = (props: {
 };
 
 const StyledTabMenu = styled.nav`
+    margin-bottom: 40px;
     ul {
         display: flex;
-        gap: 30px;
+        gap: 20px;
     }
 `
 const TabMenuItem = styled.li`
     position: relative;
+    z-index: 0;
 `
 const Link = styled.a`
     font-weight: 400;
@@ -37,14 +39,20 @@ const Link = styled.a`
     letter-spacing: 0.07em;
     text-transform: uppercase;
     padding: 10px;
+    &:hover {
+        &::before {
+            height: 10px;   
+        }
+    }
     &::before {
         background-color: ${Theme.colors.accent};
         content: '';
         display: inline-block;
-        height: 10px;
+        //height: 10px;
         position: absolute;
+        z-index: -1;
         bottom: -5px;
-        left: -10px;
-        right: -10px;
+        left: 0;
+        right: 0;
     }
 `
