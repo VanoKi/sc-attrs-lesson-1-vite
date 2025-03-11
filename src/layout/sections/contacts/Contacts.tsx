@@ -30,6 +30,10 @@ const StyledForm = styled.form`
     align-items: center;
     gap: 10px;
     margin: 0 auto;
+    textarea {
+        resize: none;
+        height: 155px;
+    }
 `
 const Field = styled.input`
     width: 100%;
@@ -44,5 +48,8 @@ const Field = styled.input`
     &::placeholder {
         color: ${Theme.colors.placeholderColor};
         text-transform: capitalize;
+    }
+    &:focus-visible {
+        outline: 1px solid ${Theme.colors.borderColor};
     }
 `
