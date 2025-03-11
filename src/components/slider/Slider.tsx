@@ -56,6 +56,7 @@ const Pagination = styled.span`
         }
         &.active {
             background: ${Theme.colors.accent};
+            width: 20px;
         }
     }
 `
