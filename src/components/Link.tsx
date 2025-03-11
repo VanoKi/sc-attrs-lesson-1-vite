@@ -7,6 +7,8 @@ export const Link = styled.a`
     letter-spacing: 0.07em;
     text-transform: uppercase;
     padding: 10px;
+    position: relative;
+    z-index: 0;
     &:hover {
         &::before {
             height: 10px;   

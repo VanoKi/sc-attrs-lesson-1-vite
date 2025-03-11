@@ -30,6 +30,5 @@ const StyledTabMenu = styled.nav`
     }
 `
 const TabMenuItem = styled.li`
-    position: relative;
-    z-index: 0;
+
 `
