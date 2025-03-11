@@ -39,5 +39,6 @@ const Field = styled.input`
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.05em;
-    color: #495057;
+    /* color: #495057; */
+    color: ${Theme.colors.font};
 `
