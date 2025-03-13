@@ -66,6 +66,7 @@ const SocialIconLink = styled.a`
     &:hover {
         color: ${Theme.colors.primaryBg};
         transform: translateY(-4px);
+        background-color: ${Theme.colors.accent};
     }
 `
 const Copyright = styled.small`
