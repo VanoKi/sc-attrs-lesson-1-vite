@@ -56,7 +56,6 @@ const SocialIconsListItem = styled.li`
 const SocialIconLink = styled.a`
 `
 const Copyright = styled.small`
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 12px;
     text-align: center;
