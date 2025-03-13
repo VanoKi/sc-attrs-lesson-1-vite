@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Icon } from "../../../components/icon/Icon"
 import { FLexWrapper } from "../../../components/FlexWrapper"
+import {Theme} from "../../../styles/Theme.ts";
 
 export const Footer = () => {
     return (
@@ -37,10 +38,10 @@ export const Footer = () => {
 }
 
 const StyledFooter = styled.footer`
-    background-color: #cdcdcd;
-    min-height: 20vh;
+    background-color: ${Theme.colors.primaryBg};
 `
 const Name = styled.span`
+    
 `
 const SocialIconsList = styled.ul`
     display: flex;
