@@ -50,6 +50,7 @@ const Name = styled.span`
 const SocialIconsList = styled.ul`
     display: flex;
     gap: 30px;
+    padding: 26px 0 30px;
 `
 const SocialIconsListItem = styled.li`
 `
@@ -59,5 +60,6 @@ const Copyright = styled.small`
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
+    //color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
 `
