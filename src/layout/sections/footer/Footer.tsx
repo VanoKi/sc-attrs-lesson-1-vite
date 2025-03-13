@@ -63,6 +63,9 @@ const SocialIconLink = styled.a`
     justify-content: center;
     align-items: center;
     color: ${Theme.colors.accent};
+    &:hover {
+        color: ${Theme.colors.primaryBg};
+    }
 `
 const Copyright = styled.small`
     font-weight: 400;
