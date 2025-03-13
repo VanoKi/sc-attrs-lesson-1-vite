@@ -49,12 +49,20 @@ const Name = styled.span`
 `
 const SocialIconsList = styled.ul`
     display: flex;
-    gap: 30px;
-    padding: 26px 0 30px;
+    gap: 20px;
+    margin: 30px 0;
 `
 const SocialIconsListItem = styled.li`
 `
 const SocialIconLink = styled.a`
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ${Theme.colors.accent};
 `
 const Copyright = styled.small`
     font-weight: 400;
