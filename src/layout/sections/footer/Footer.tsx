@@ -39,9 +39,13 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: ${Theme.colors.primaryBg};
+    padding: 40px 0;
 `
 const Name = styled.span`
-    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    //letter-spacing: 0.14em;
 `
 const SocialIconsList = styled.ul`
     display: flex;
@@ -52,4 +56,9 @@ const SocialIconsListItem = styled.li`
 const SocialIconLink = styled.a`
 `
 const Copyright = styled.small`
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
 `
