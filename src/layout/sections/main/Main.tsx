@@ -35,7 +35,8 @@ const Photo = styled.img`
     height: 430px;
     object-fit: cover;
     @media ${Theme.media.mobile} {
-        
+        width: 310px;
+        height: 380px;
     }
 `
 const StyledMain = styled.section`
@@ -84,5 +85,8 @@ const PhotoWrapper = styled.div`
         width: 360px;
         height: 470px;
         border: 5px solid ${Theme.colors.accent};
+        @media ${Theme.media.mobile} {
+            width: 314px;height: 414px;
+        }
     }
 `
