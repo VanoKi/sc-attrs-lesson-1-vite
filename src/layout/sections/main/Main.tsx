@@ -8,7 +8,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FLexWrapper aline={'center'} justify={'space-between'}>
+                <FLexWrapper aline={'center'} justify={'space-between'} wrap={'wrap'}>
                     <div>
                         <SmallText>
                             Hi There
@@ -34,6 +34,9 @@ const Photo = styled.img`
     width: 350px;
     height: 430px;
     object-fit: cover;
+    @media ${Theme.media.mobile} {
+        
+    }
 `
 const StyledMain = styled.section`
     min-height: 100vh;
