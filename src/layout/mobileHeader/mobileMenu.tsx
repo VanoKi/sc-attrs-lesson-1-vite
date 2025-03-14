@@ -7,6 +7,9 @@ export const MobileMenu = (props: {
 }) => {
     return (
         <StyledMobileMenu>
+            <Burgerutton>
+
+            </Burgerutton>
             <ul>
                 {props.menuItems.map((item: string, index: number) => {
                     return <ListItem key={index}>
@@ -31,7 +34,9 @@ const StyledMobileMenu = styled.nav`
          display: none;
      }
 `
-
+const Burgerutton = styled.button`
+    
+`
 const Link = styled.a`
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
