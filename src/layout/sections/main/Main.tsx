@@ -3,6 +3,7 @@ import photo from "./../../../assets/images/Sveta_1.webp";
 import { FLexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { Theme } from "../../../styles/Theme";
+import {font} from "../../../styles/Common.tsx";
 
 export const Main = () => {
     return (
@@ -49,9 +50,10 @@ const MainTitle = styled.h1`
     font-size: 27px;
 `
 const Name = styled.h2`
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
+    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
+    //font-family: 'Josefin Sans', sans-serif;
+    //font-weight: 700;
+    //font-size: 50px;
     letter-spacing: 0.05em;
     margin: 10px 0;
     span {
