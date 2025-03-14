@@ -2,11 +2,11 @@ import styled from "styled-components";
 import {Theme} from "../../styles/Theme.ts";
 
 
-export const HeaderMenu = (props: {
+export const MobileMenu = (props: {
     menuItems: Array<string>
 }) => {
     return (
-        <StyledHeaderMenu>
+        <StyledMobileMenu>
             <ul>
                 {props.menuItems.map((item: string, index: number) => {
                     return <ListItem key={index}>
@@ -18,11 +18,11 @@ export const HeaderMenu = (props: {
                             </ListItem>
                 })}
             </ul>
-        </StyledHeaderMenu>
+        </StyledMobileMenu>
         );
     };
 
-const StyledHeaderMenu = styled.nav`
+const StyledMobileMenu = styled.nav`
     ul {
         display: flex;
         gap: 30px;
