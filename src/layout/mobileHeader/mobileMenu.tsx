@@ -7,9 +7,9 @@ export const MobileMenu = (props: {
 }) => {
     return (
         <StyledMobileMenu>
-            <Burgerutton>
-
-            </Burgerutton>
+            <BurgerButton>
+                <span></span>
+            </BurgerButton>
             <ul>
                 {props.menuItems.map((item: string, index: number) => {
                     return <ListItem key={index}>
@@ -34,8 +34,39 @@ const StyledMobileMenu = styled.nav`
          display: none;
      }
 `
-const Burgerutton = styled.button`
-    
+const BurgerButton = styled.button`
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    span {
+        display: block;
+        width: 36px;
+        height: 2px;
+        color: ${Theme.colors.font};
+        position: absolute;
+        left: 40px;
+        bottom: 50px;
+        &::before {
+            content: '';
+            display: block;
+            width: 36px;
+            height: 2px;
+            color: ${Theme.colors.font};
+            position: absolute;
+            transform: translateY(-10px);
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 2px;
+            color: ${Theme.colors.font};
+            position: absolute;
+            transform: translateY(10px);
+        }
+    }
 `
 const Link = styled.a`
     font-family: "Josefin Sans", sans-serif;
