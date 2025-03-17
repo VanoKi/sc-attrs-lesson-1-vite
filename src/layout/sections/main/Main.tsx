@@ -35,6 +35,7 @@ const Photo = styled.img`
     width: 350px;
     height: 430px;
     object-fit: cover;
+    margin-right: 20px;
     @media ${Theme.media.mobile} {
         width: 310px;
         height: 380px;
@@ -95,6 +96,8 @@ const PhotoWrapper = styled.div`
         border: 5px solid ${Theme.colors.accent};
         @media ${Theme.media.mobile} {
             width: 314px;height: 414px;
+            top: -17px;
+            left: 20px;
         }
     }
 `
