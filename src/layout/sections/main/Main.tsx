@@ -83,6 +83,7 @@ const SmallText = styled.span`
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
+    margin-top: 65px;
     &::before {
         content: '';
         position: absolute;
