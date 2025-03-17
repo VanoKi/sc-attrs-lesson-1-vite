@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
 import { FLexWrapper } from "../../../../components/FlexWrapper";
+import {Theme} from "../../../../styles/Theme.ts";
 
 type SkillPropsType = {
     iconId: string
@@ -22,11 +23,15 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    width: 380px;
+    width: 330px;
+    flex-grow: 1;
     padding: 62px 20px 40px;
+    @media ${Theme.media.mobile} {
+        padding: 62px 0 40px;
+    }
 `
 const SkillTitle = styled.h3`
-    font-family: 'Josefin Sans' sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 70px;
     margin-bottom: 15px;
     font-weight: 700;
