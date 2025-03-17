@@ -9,7 +9,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FLexWrapper aline={'center'} justify={'space-between'} wrap={'wrap'}>
+                <FLexWrapper aline={'center'} justify={'space-around'} wrap={'wrap'}>
                     <div>
                         <SmallText>
                             Hi There
