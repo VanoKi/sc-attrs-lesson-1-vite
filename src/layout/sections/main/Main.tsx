@@ -70,6 +70,10 @@ const Name = styled.h2`
             bottom: 0;
             z-index: -1;
         }
+        white-space: nowrap;
+    }
+    @media ${Theme.media.mobile} {
+        margin: 15px 0px 22px;
     }
 `
 const SmallText = styled.span`
