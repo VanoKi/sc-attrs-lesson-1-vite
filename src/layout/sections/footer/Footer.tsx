@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Icon } from "../../../components/icon/Icon"
 import { FLexWrapper } from "../../../components/FlexWrapper"
 import {Theme} from "../../../styles/Theme.ts";
+import {font} from "../../../styles/Common.tsx";
 
 export const Footer = () => {
     return (
@@ -42,10 +43,7 @@ const StyledFooter = styled.footer`
     padding: 40px 0;
 `
 const Name = styled.span`
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    //letter-spacing: 0.14em;
+    ${font({family: "'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
 `
 const SocialIconsList = styled.ul`
     display: flex;
