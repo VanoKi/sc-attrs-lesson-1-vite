@@ -31,7 +31,8 @@ const Description = styled.div`
 const StyledWork = styled.div`
     background: ${Theme.colors.secondaryBg};
     max-width: 540px;
-    width: 100%
+    width: 330px;
+    flex-grow: 1;
     ${Link} {
         padding: 10px 0;
         & + ${Link} {

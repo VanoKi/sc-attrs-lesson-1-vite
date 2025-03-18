@@ -26,7 +26,11 @@ const StyledTabMenu = styled.nav`
     margin-bottom: 40px;
     ul {
         display: flex;
-        gap: 20px;
+        //gap: 20px;
+        justify-content: space-between;
+        max-width: 352px;
+        width: 100%;
+        outline: 1px solid red;
     }
 `
 const TabMenuItem = styled.li`

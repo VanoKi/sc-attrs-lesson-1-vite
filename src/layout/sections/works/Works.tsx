@@ -16,7 +16,7 @@ export const Works = () => {
                 <FLexWrapper justify={'center'}>
                     <TabMenu menuItems={worksItems}/>
                 </FLexWrapper>
-                <FLexWrapper justify={'space-between'} aline="flex-start">
+                <FLexWrapper justify={'space-between'} aline="flex-start" wrap={'wrap'}>
                     <Work title={'Social Network'}
                             src={socialImg}/>
                     <Work title={'Timer'}
