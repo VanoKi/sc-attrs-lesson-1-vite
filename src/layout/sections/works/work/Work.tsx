@@ -30,7 +30,6 @@ const Description = styled.div`
 `
 const StyledWork = styled.div`
     background: ${Theme.colors.secondaryBg};
-    max-width: 540px;
     width: 330px;
     flex-grow: 1;
     ${Link} {
@@ -39,6 +38,9 @@ const StyledWork = styled.div`
             margin-left: 20px;
     }
 }
+    @media ${Theme.media.desktop} {
+        max-width: 540px;
+    }
 `
 const ImageWrapper = styled.div`
     position: relative;

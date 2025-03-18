@@ -28,5 +28,7 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-    background-color: #d9f2fb;
+    ${FLexWrapper} {
+        gap: 30px;
+    }
 `
