@@ -44,11 +44,21 @@ const StyledWork = styled.div`
 `
 const ImageWrapper = styled.div`
     position: relative;
-    &:hover {
-        ${Button} {
-            opacity: 1;
-        }
+
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
         &::before {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &::before {
         content: '';
         position: absolute;
         left: 0;
@@ -57,20 +67,24 @@ const ImageWrapper = styled.div`
         bottom: 0;
         background: rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(4px);
+        opacity: 0;
+    }
+        
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+        ${Button} {
+            opacity: 1;
         }
     }
-    ${Button} {
-        opacity: 0;
-        position: absolute;
-        left: 50%;
-        /* right: 50%; */
-        top: 50%;
-        /* bottom: 50%; */
-        transform: translate(-50%, -50%);
-        &::before {
-            width: 100%;
-            height: 100%;
-        }
+    @media ${Theme.media.tablet} {
+            &::before {
+                opacity: 1;
+            }
+            ${Button} {
+                opacity: 1;
+            }
     }
 `
 const Image = styled.img`
