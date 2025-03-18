@@ -7,14 +7,14 @@ import socialImg from "./../../../assets/images/proj1.png";
 import timerImg from "./../../../assets/images/proj2.png";
 import { Container } from "../../../components/Container";
 
-const worksItems = ['All', 'Landing Page', 'React', 'SPA']
+const tabsItems = ['All', 'Landing Page', 'React', 'SPA']
 export const Works = () => {
     return (
         <StyledWorks>
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <FLexWrapper justify={'center'}>
-                    <TabMenu menuItems={worksItems}/>
+                    <TabMenu tabsItems={tabsItems}/>
                 </FLexWrapper>
                 <FLexWrapper justify={'space-between'} aline="flex-start" wrap={'wrap'}>
                     <Work title={'Social Network'}

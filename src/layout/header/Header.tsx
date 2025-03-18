@@ -4,9 +4,10 @@ import {Container} from "../../components/Container.tsx";
 import {FLexWrapper} from "../../components/FlexWrapper.tsx";
 import {HeaderMenu} from "./headerMenu.tsx";
 import {MobileMenu} from "../mobileHeader/mobileMenu.tsx"
+import React from "react";
 
-const items = ['Home', 'Skils', 'Works', 'Testimony', 'Contact',]
-export const Header = () => {
+const items = ['Home', 'Skills', 'Works', 'Testimony', 'Contact',]
+export const Header: React.FC = () => {
     return (
         <StyledHeader>
             <Container>

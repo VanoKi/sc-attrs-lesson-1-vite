@@ -5,12 +5,12 @@ import {Link} from "../../../../components/Link.tsx";
 //     menuItems: Array<string>
 // }
 export const TabMenu = (props: {
-    menuItems: Array<string>
+    tabsItems: Array<string>
 }) => {
     return (
         <StyledTabMenu>
             <ul>
-                {props.menuItems.map((item:string, index:number)=>{
+                {props.tabsItems.map((item:string, index:number)=>{
                     return (
                         <TabMenuItem key={index}>
                             <Link href="#">{item}</Link>
