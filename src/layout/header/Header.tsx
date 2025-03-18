@@ -1,23 +1,23 @@
 import { Logo } from "../../components/logo/Logo";
 import {Container} from "../../components/Container.tsx";
 import {FLexWrapper} from "../../components/FlexWrapper.tsx";
-import {HeaderMenu} from "./headerMenu.tsx";
+import {DesktopMenu} from "./headerMenu.tsx";
 import {MobileMenu} from "../mobileHeader/mobileMenu.tsx"
 import React from "react";
-import {StyledHeader} from "./Header_Styles.ts";
+import {S} from "./Header_Styles.ts";
 
 const items = ['Home', 'Skills', 'Works', 'Testimony', 'Contact',]
 export const Header: React.FC = () => {
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
                 <FLexWrapper justify={'space-between'} aline={'center'}>
                     <Logo />
-                    <HeaderMenu menuItems={items}/>
+                    <DesktopMenu menuItems={items}/>
                     <MobileMenu menuItems={items}/>
                 </FLexWrapper>
             </Container>
-        </StyledHeader>
+        </S.Header>
     );
 };
 
