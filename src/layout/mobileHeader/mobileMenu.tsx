@@ -15,7 +15,7 @@ export const MobileMenu = (props: {
             <BurgerButton isOpen={menuIsOpen} onClick={ onBurgerBtnClick }>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen={menuIsOpen}>
+            <MobileMenuPopup isOpen={menuIsOpen} onClick={ () => { setMenuIsOpen(false)}}>
                 <ul>
                     {props.menuItems.map((item: string, index: number) => {
                         return <ListItem key={index}>
