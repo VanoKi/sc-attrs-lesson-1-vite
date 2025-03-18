@@ -18,8 +18,8 @@ const StyledDesktopMenu = styled.nav`
         display: flex;
         gap: 30px;
     }
-     @media ${Theme.media.tablet} {
-         display: none;
-     }
+     // @media ${Theme.media.tablet} {
+     //     display: none;
+     // }
 `
 
