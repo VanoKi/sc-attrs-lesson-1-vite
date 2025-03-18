@@ -1,10 +1,10 @@
 import styled, {css} from "styled-components";
 import {Theme} from "../../styles/Theme.ts";
-import {useState} from "react";
+import React, {useState} from "react";
 import {Menu} from "../header/menu/Menu.tsx";
 
 
-export const MobileMenu = (props: {
+export const MobileMenu: React.FC<{menuItems: Array<string>}> = (props: {
     menuItems: Array<string>
 }) => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
