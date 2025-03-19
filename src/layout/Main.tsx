@@ -14,7 +14,7 @@ export const Main = () => {
                         <span>I’m Zarror Nibors</span>
                         <p>
                             I’am freelance
-                            <h1>web developer </h1>
+                            <h1> web developer </h1>
                             based in Indonesia who loves to craft attractive design experiences for the web.
                         </p>
                     </FLexWrapper>
@@ -41,6 +41,7 @@ const ContentArea = styled.div`
     //flex: 1;
     //padding: 20px;
     margin-left: 118px;
+    margin-top: 175px;
     position: relative;
     z-index: 1;
     text-align: left;
@@ -51,11 +52,16 @@ const ContentArea = styled.div`
     }
     h1 {
         display: inline;
+        color: #fff;
     }
     p, h1 {
         font-weight: 400;
         font-size: 20px;
         line-height: 180%;
+    }
+    p {
+        max-width: 404px;
+        color: rgba(255, 255, 255, 0.5);
     }
 `
 const ImageArea = styled.div`
