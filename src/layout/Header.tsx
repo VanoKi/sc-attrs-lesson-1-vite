@@ -23,6 +23,9 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background: transparent;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
 `
 const Btn = styled.button`
     width: 157px;
