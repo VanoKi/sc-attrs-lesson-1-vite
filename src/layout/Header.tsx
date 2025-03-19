@@ -23,8 +23,11 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background: transparent;
-    position: sticky;
-    top: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 65px;
     z-index: 9;
 `
 const Btn = styled.button`
