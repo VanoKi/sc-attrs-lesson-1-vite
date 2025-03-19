@@ -10,9 +10,9 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FLexWrapper justify={'space-between'} align={'center'}>
-                    <a href="#">
+                    <Logo href="#">
                         Logo
-                    </a>
+                    </Logo>
                     <Menu />
                     <Btn>Contact Me</Btn>
                 </FLexWrapper>
@@ -21,7 +21,9 @@ export const Header = () => {
     );
 };
 
-const StyledHeader = styled.header``
+const StyledHeader = styled.header`
+    background: transparent;
+`
 const Btn = styled.button`
     width: 157px;
     height: 50px;
@@ -29,4 +31,8 @@ const Btn = styled.button`
     background-color: ${Theme.colors.accent};
     font-weight: 500;
     font-size: 20px;
+`
+const Logo = styled.a`
+    font-weight: 700;
+    font-size: 30px;
 `
