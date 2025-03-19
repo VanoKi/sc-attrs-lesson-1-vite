@@ -35,4 +35,5 @@ const Btn = styled.button`
 const Logo = styled.a`
     font-weight: 700;
     font-size: 30px;
+    padding: 10px;
 `
