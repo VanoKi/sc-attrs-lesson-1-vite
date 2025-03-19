@@ -40,9 +40,12 @@ const StyledMain = styled.div`
 const ContentArea = styled.div`
     //flex: 1;
     //padding: 20px;
-    margin-left: 118px;
-    margin-top: 175px;
-    position: relative;
+    //margin-left: 118px;
+    //margin-top: 175px;
+    //position: relative;
+    position: absolute;
+    top: 175px;
+    left: 118px;
     z-index: 1;
     text-align: left;
     span {
