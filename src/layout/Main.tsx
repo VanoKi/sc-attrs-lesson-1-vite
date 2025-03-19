@@ -62,6 +62,8 @@ const ImageArea = styled.div`
     //flex: 1;
     //overflow: hidden;
     position: absolute;
+    top: 0;
+    right: 0;
     z-index: 0;
     img {
         width: 721px;
