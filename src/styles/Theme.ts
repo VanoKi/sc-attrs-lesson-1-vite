@@ -2,7 +2,7 @@ export const Theme = {
     colors: {
         primaryBg: "#222A36",
         secondaryBg: "#000000",
-        thirdBg: "#222A36",
+        thirdBg: "rgba(34, 42, 54, 0.9)",
         accent: "#676CDB",
         default: "#C4C4C4",
         font: "#ffffff",

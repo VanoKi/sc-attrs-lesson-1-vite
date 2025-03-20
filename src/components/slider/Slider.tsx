@@ -1,21 +1,24 @@
 import styled from "styled-components"
 import { FLexWrapper } from "../FlexWrapper"
 import { Theme } from "../../styles/Theme"
+import clientFace from "../../assets/images/client_face.png"
 
 export const Slider = () => {
     return (
         <StyledSlider>
             <FLexWrapper>
+                <ClientFace>
+                    <img src={clientFace} />
+                </ClientFace>
                 <Slide>
                     <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempore nostrum eligendi quaerat exercitationem unde optio dicta et, ducimus labore fuga quis pariatur voluptatibus incidunt excepturi modi ratione ad nihil.</Text>
-                    <Name>@Vasya Vasilevski</Name>
+                    <Pagination>
+                        <span> </span>
+                        <span className={`active`}> </span>
+                        <span> </span>
+                    </Pagination>
                 </Slide>
             </FLexWrapper>
-            <Pagination>
-                <span> </span>
-                <span className={`active`}> </span>
-                <span> </span>
-            </Pagination>
         </StyledSlider>
     )
 }
@@ -27,9 +30,17 @@ const StyledSlider = styled.div`
     flex-direction: column;
     align-items: center;
 `
+const ClientFace = styled.div`
+    //outline: yellow 1px solid;
+    img {
+        width: 390px;
+        height: 390px;
+        object-fit: cover;
+    }
+`
 const Slide = styled.div`
-    text-align: center;
-
+    display: flex;
+    flex-direction: column;
 `
 const Text = styled.p`
 `

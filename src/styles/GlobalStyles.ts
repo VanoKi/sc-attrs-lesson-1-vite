@@ -42,12 +42,12 @@ export const GlobalStyles = createGlobalStyle`
             padding: 80px 0;
         }
     }
-    section:nth-of-type(odd) {
-        background-color: ${Theme.colors.primaryBg};
-    }
-    section:nth-of-type(even) {
-        background-color: ${Theme.colors.secondaryBg};
-    }
+    // section:nth-of-type(odd) {
+    //     background-color: ${Theme.colors.primaryBg};
+    // }
+    // section:nth-of-type(even) {
+    //     background-color: ${Theme.colors.secondaryBg};
+    // }
     p {
         font-weight: 400;
         font-size: 14px;
