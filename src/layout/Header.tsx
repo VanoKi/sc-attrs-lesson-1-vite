@@ -25,6 +25,7 @@ export const Header = () => {
 const StyledHeader = styled.header`
     padding-top: 10px;
     background: transparent;
+    backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
     right: 0;

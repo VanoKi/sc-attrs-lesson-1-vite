@@ -4,6 +4,7 @@ export const Theme = {
         secondaryBg: "#000000",
         thirdBg: "#222A36",
         accent: "#676CDB",
+        default: "#C4C4C4",
         font: "#ffffff",
         borderColor: '#4a4a4a',
         placeholderColor: '#495057'

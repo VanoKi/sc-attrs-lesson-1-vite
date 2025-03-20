@@ -13,7 +13,7 @@ export const Skills = () => {
                 <FLexWrapper>
                     {items.map((item, index) => (
                             <IconWrap key={index}>
-                                <Icon iconId={item}  height={'100px'} width={'100px'} viewBox={'0 0 100 100'}/>
+                                <Icon iconId={item}  height={'100%'} width={'100%'} viewBox={'0 0 100 100'}/>
                             </IconWrap>
                     ))}
                 </FLexWrapper>
