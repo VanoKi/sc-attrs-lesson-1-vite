@@ -6,6 +6,8 @@ import {Theme} from "../styles/Theme.ts";
 import {Icon} from "../components/icon/Icon.tsx";
 
 export const Experience = () => {
+    const icons = ['frontEnd', 'UIUX', 'Branding']
+    const titles = ['Front End Developer', 'UI/UX Designer', 'Branding Designer']
     return (
         <StyledExperience>
             <GridItems>
@@ -22,12 +24,14 @@ export const Experience = () => {
                     <p>Working</p>
                 </Merit>
                 <Roles>
-                    <RolesItem>
-                        <RolesItemContent>
-                            <Icon iconId={'frontEnd'}/>
-                            <RolesItemContentTitle>Front End Developer</RolesItemContentTitle>
-                        </RolesItemContent>
-                    </RolesItem>
+                    {icons.map((item, index) => (
+                        <RolesItem  key={index}>
+                            <RolesItemContent>
+                                <Icon iconId={item}/>
+                                <RolesItemContentTitle>{titles[index]}</RolesItemContentTitle>
+                            </RolesItemContent>
+                        </RolesItem>
+                    ))}
                 </Roles>
             </GridItems>
         </StyledExperience>
@@ -71,6 +75,7 @@ const Merit = styled(GridItem)`
 `
 const Roles = styled(GridItem)`
     display: flex;
+    gap: 15px;
 `
 const RolesItem = styled.div`
     width: 288px;
