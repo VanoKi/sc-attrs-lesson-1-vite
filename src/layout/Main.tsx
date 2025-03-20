@@ -75,6 +75,7 @@ const ContentArea = styled.div`
     p {
         max-width: 404px;
         color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 30px;
     }
 `
 const ImageArea = styled.div`
