@@ -38,7 +38,7 @@ const StyledExperience = styled.section`
 `
 const GridItems = styled(Container)`
     display: grid;
-    grid-template-columns: 425px 1fr;
+    grid-template-columns: 290px 1fr;
     grid-template-rows: auto 295px;
 `
 const GridItem = styled.div`
