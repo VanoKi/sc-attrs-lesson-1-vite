@@ -25,6 +25,10 @@ export const Main = () => {
                             <Icon iconId={'email'} />
                             Email me
                         </BtnMain>
+                        <DownloadCv as={'a'} >
+                            <Icon iconId={'download'}/>
+                            Download CV
+                        </DownloadCv>
                     </FLexWrapper>
                 </ContentArea>
                 <ImageArea>
@@ -95,4 +99,10 @@ const BtnMain = styled(Button)`
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
+`
+const DownloadCv = styled(BtnMain)`
+    width: 235px;
+    background: transparent;
+    padding: 10px 20px;
+    line-height: 47px;
 `
