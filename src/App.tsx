@@ -3,6 +3,7 @@ import {Header} from "./layout/Header.tsx";
 import {Main} from "./layout/Main.tsx";
 import {Skills} from "./layout/Skills.tsx";
 import {Experience} from "./layout/Experience.tsx"
+import {Testimony} from "./layout/Testimony.tsx";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Main />
             <Skills />
             <Experience />
+            <Testimony />
         </div>
     );
 }

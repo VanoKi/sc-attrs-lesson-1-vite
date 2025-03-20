@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../styles/Theme.ts";
 
 export const Menu = () => {
     return (
@@ -21,5 +22,9 @@ const StyledMenu = styled.nav`
     a {
         display: block;
         padding: 10px;
+        transition: color 0.3s ease;
+        &:hover {
+            color: ${Theme.colors.accent};
+        }
     }
 `
