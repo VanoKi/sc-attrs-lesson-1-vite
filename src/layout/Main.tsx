@@ -3,6 +3,8 @@ import styled from "styled-components";
 import {Container} from "../components/Container.tsx";
 import {FLexWrapper} from "../components/FlexWrapper.tsx";
 import faceImg from '../../src/assets/images/face.png'
+import {Button} from "../components/Button.tsx";
+import {Icon} from "../components/icon/Icon.tsx";
 
 export const Main = () => {
     return (
@@ -19,7 +21,10 @@ export const Main = () => {
                         </p>
                     </FLexWrapper>
                     <FLexWrapper>
-
+                        <BtnMain>
+                            <Icon iconId={'email'} />
+                            Email me
+                        </BtnMain>
                     </FLexWrapper>
                 </ContentArea>
                 <ImageArea>
@@ -43,6 +48,7 @@ const ContentArea = styled.div`
     //margin-left: 118px;
     //margin-top: 175px;
     //position: relative;
+    outline: yellowgreen 1px solid;
     position: absolute;
     top: 175px;
     left: 118px;
@@ -70,6 +76,7 @@ const ContentArea = styled.div`
 const ImageArea = styled.div`
     //flex: 1;
     //overflow: hidden;
+    outline: yellow 1px solid;
     position: absolute;
     top: 0;
     right: 0;
@@ -79,4 +86,13 @@ const ImageArea = styled.div`
         height: 743px;
         object-fit: cover;
     }
+`
+const BtnMain = styled(Button)`
+    width: 203px;
+    height: 64px;
+    padding: 20px 34px;
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
 `

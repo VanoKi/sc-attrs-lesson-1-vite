@@ -4,6 +4,7 @@ import {Container} from "../components/Container.tsx";
 import {FLexWrapper} from "../components/FlexWrapper.tsx";
 import {Menu} from "../components/Menu.tsx";
 import {Theme} from "../styles/Theme.ts";
+import {Button} from "../components/Button.tsx";
 
 export const Header = () => {
     return (
@@ -14,7 +15,7 @@ export const Header = () => {
                         Logo
                     </Logo>
                     <Menu />
-                    <Btn>Contact Me</Btn>
+                    <BtnHeader>Contact Me</BtnHeader>
                 </FLexWrapper>
             </Container>
         </StyledHeader>
@@ -31,11 +32,10 @@ const StyledHeader = styled.header`
     height: 65px;
     z-index: 9;
 `
-const Btn = styled.button`
+const BtnHeader = styled(Button)`
     width: 157px;
     height: 50px;
     padding: 10px 20px;
-    background-color: ${Theme.colors.accent};
     font-weight: 500;
     font-size: 20px;
 `
