@@ -77,15 +77,7 @@ const Roles = styled(GridItem)`
     display: flex;
     gap: 15px;
 `
-const RolesItem = styled.div`
-    width: 288px;
-    height: 295px;
-    padding: 35px 30px;
-    background: ${Theme.colors.default};
-    display: flex;
-    justify-content: start;
-    align-items: end;
-`
+
 const RolesItemContent = styled.div`
     width: 106px;
     height: 86px;
@@ -95,4 +87,22 @@ const RolesItemContentTitle = styled.h3`
     font-size: 20px;
     line-height: 120%;
     color: ${Theme.colors.thirdBg};
+    transition: color 0.3s ease;
+`
+const RolesItem = styled.div`
+    width: 288px;
+    height: 295px;
+    padding: 35px 30px;
+    background: ${Theme.colors.default};
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background: ${Theme.colors.accent};
+        ${RolesItemContentTitle} {
+            color: #fff;
+        }
+    }
 `
