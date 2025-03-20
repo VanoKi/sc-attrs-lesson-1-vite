@@ -11,7 +11,7 @@ export const Skills = () => {
             <Container>
                 <FLexWrapper>
                     <IconWrap>
-                        <Icon iconId={'figma'}/>
+                        <Icon iconId={'figma'}  height={'100px'} width={'100px'} viewBox={'0 0 100 100'}/>
                     </IconWrap>
                 </FLexWrapper>
             </Container>
@@ -23,5 +23,8 @@ const StyledSkills = styled.section`
     background: ${Theme.colors.secondaryBg};
 `
 const IconWrap = styled.div`
-    
+    width: 100px;height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
