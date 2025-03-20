@@ -24,7 +24,8 @@ export const Experience = () => {
                 <Roles>
                     <RolesItem>
                         <RolesItemContent>
-                            <Icon iconId={}
+                            <Icon iconId={'frontEnd'}/>
+                            <RolesItemContentTitle>Front End Developer</RolesItemContentTitle>
                         </RolesItemContent>
                     </RolesItem>
                 </Roles>
@@ -76,8 +77,17 @@ const RolesItem = styled.div`
     height: 295px;
     padding: 35px 30px;
     background: ${Theme.colors.default};
+    display: flex;
+    justify-content: start;
+    align-items: end;
 `
 const RolesItemContent = styled.div`
     width: 106px;
     height: 86px;
+`
+const RolesItemContentTitle = styled.h3`
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: ${Theme.colors.thirdBg};
 `
