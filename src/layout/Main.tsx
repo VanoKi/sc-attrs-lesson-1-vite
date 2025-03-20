@@ -106,4 +106,5 @@ const DownloadCv = styled(BtnMain)`
     background: transparent;
     padding: 10px 20px;
     line-height: 47px;
+    text-decoration: underline;
 `
