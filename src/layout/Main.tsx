@@ -39,19 +39,13 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     margin: 0 auto;
     max-width: 1440px;
-    ${FLexWrapper} {
-        position: relative;
-    }
+    height: 743px;
+    position: relative;
 `
 const ContentArea = styled.div`
-    //flex: 1;
-    //padding: 20px;
-    //margin-left: 118px;
-    //margin-top: 175px;
-    //position: relative;
     outline: yellowgreen 1px solid;
     position: absolute;
     top: 175px;
@@ -79,8 +73,6 @@ const ContentArea = styled.div`
     }
 `
 const ImageArea = styled.div`
-    //flex: 1;
-    //overflow: hidden;
     outline: yellow 1px solid;
     position: absolute;
     top: 0;
