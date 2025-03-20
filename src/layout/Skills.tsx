@@ -6,13 +6,16 @@ import {FLexWrapper} from "../components/FlexWrapper.tsx";
 import {Icon} from "../components/icon/Icon.tsx";
 
 export const Skills = () => {
+    const items = ['figma', 'html', 'css', 'sass', 'react']
     return (
         <StyledSkills>
             <Container>
                 <FLexWrapper>
-                    <IconWrap>
-                        <Icon iconId={'figma'}  height={'100px'} width={'100px'} viewBox={'0 0 100 100'}/>
-                    </IconWrap>
+                    {items.map((item, index) => (
+                            <IconWrap key={index}>
+                                <Icon iconId={item}  height={'100px'} width={'100px'} viewBox={'0 0 100 100'}/>
+                            </IconWrap>
+                    ))}
                 </FLexWrapper>
             </Container>
         </StyledSkills>
@@ -21,6 +24,9 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     background: ${Theme.colors.secondaryBg};
+    ${FLexWrapper} {
+        gap: 170px;
+    }
 `
 const IconWrap = styled.div`
     width: 100px;height: 100px;
