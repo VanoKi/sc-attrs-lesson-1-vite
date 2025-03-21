@@ -99,10 +99,14 @@ const RolesItem = styled.div`
     align-items: end;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
+    color: ${Theme.colors.primaryBg};
+    
     &:hover {
-        background: ${Theme.colors.accent};
+        color: ${Theme.colors.font};
+        background-color: ${Theme.colors.accent};
         ${RolesItemContentTitle} {
-            color: #fff;
+            color: ${Theme.colors.font};
         }
     }
 `

@@ -47,4 +47,10 @@ const ConnectTitle = styled.h2`
 const Social = styled.ul`
     display: flex;
     gap: 50px;
+    a:hover {
+        svg {
+            // stroke: ${Theme.colors.accent};
+            // fill: ${Theme.colors.accent};
+        }
+    }
 `
