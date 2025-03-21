@@ -11,7 +11,7 @@ export const Connect = () => {
     return (
         <StyledConnect>
             <Container>
-                <FLexWrapper>
+                <FLexWrapper justify={'space-between'}>
                     <Lets direction={'column'}>
                         <ConnectTitle>
                             Let’s
