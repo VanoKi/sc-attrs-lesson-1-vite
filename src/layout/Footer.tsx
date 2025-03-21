@@ -7,17 +7,23 @@ import {FLexWrapper} from "../components/FlexWrapper.tsx";
 export const Footer = () => {
     return (
         <StyledFooter>
-                <FooterContent>Created by&nbsp;
-                    <span>Zarror</span>
-                    &nbsp;| All Reserved!</FooterContent>
+                <Container>
+                    <FLexWrapper justify={'center'}>
+                        <FooterContent>
+                            Created by&nbsp;
+                            <span>Zarror</span>
+                            &nbsp;| All Reserved!
+                        </FooterContent>
+                    </FLexWrapper>
+                </Container>
         </StyledFooter>
     );
 };
 
-const StyledFooter = styled.section`
+const StyledFooter = styled.footer`
     background-color: ${Theme.colors.secondaryBg};
 `
-const FooterContent = styled.h2`
+const FooterContent = styled.small`
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;

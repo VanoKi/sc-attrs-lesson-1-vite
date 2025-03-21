@@ -36,6 +36,10 @@ const StyledForm = styled.form`
         font-size: 30px;
         line-height: 120%;
         color: ${Theme.colors.accent};
+        &:hover {
+            background-color: transparent;
+            color: ${Theme.colors.font}
+        }
     }
 `
 const Label = styled.label`
