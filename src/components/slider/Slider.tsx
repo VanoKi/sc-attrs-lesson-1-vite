@@ -65,8 +65,8 @@ const Text = styled.p`
     line-height: 180%;
     margin-bottom: 20px;
 `
-const Pagination = styled.span`
-    ${Icon} {
+const Pagination = styled.div`
+    &:hover ${Icon} {
         cursor: pointer;
     }
 `
