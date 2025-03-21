@@ -102,6 +102,9 @@ const RolesItem = styled.div`
     
     color: ${Theme.colors.primaryBg};
     
+    svg {
+        transition: color 0.3s ease;
+    }
     &:hover {
         color: ${Theme.colors.font};
         background-color: ${Theme.colors.accent};
