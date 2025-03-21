@@ -9,32 +9,34 @@ import {Icon} from "../components/icon/Icon.tsx";
 export const Main = () => {
     return (
         <StyledMain>
-            <FLexWrapper align={'center'}>
-                <ContentArea>
-                    <FLexWrapper direction={'column'} align={'flex-start'}>
-                        <span>Hello!</span>
-                        <span>I’m Zarror Nibors</span>
-                        <p>
-                            I’am freelance
-                            <h1> web developer </h1>
-                            based in Indonesia who loves to craft attractive design experiences for the web.
-                        </p>
-                    </FLexWrapper>
-                    <FLexWrapper>
-                        <BtnMain as={'a'}>
-                            <Icon iconId={'email'} />
-                            Email me
-                        </BtnMain>
-                        <DownloadCv as={'a'} >
-                            <Icon iconId={'download'}/>
-                            Download CV
-                        </DownloadCv>
-                    </FLexWrapper>
-                </ContentArea>
-                <ImageArea>
-                    <img src={faceImg} alt={'face'}/>
-                </ImageArea>
-            </FLexWrapper>
+            <Container>
+                <FLexWrapper align={'center'}>
+                    <ContentArea>
+                        <FLexWrapper direction={'column'} align={'flex-start'}>
+                            <span>Hello!</span>
+                            <span>I’m Zarror Nibors</span>
+                            <p>
+                                I’am freelance
+                                <h1> web developer </h1>
+                                based in Indonesia who loves to craft attractive design experiences for the web.
+                            </p>
+                        </FLexWrapper>
+                        <FLexWrapper>
+                            <BtnMain as={'a'}>
+                                <Icon iconId={'email'} />
+                                Email me
+                            </BtnMain>
+                            <DownloadCv as={'a'} >
+                                <Icon iconId={'download'}/>
+                                Download CV
+                            </DownloadCv>
+                        </FLexWrapper>
+                    </ContentArea>
+                    <ImageArea>
+                        <img src={faceImg} alt={'face'}/>
+                    </ImageArea>
+                </FLexWrapper>
+            </Container>
         </StyledMain>
     );
 };
