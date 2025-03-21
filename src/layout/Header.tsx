@@ -15,7 +15,7 @@ export const Header = () => {
                         Logo
                     </Logo>
                     <Menu />
-                    <BtnHeader>Contact Me</BtnHeader>
+                    <BtnHeader as={'a'}>Contact Me</BtnHeader>
                 </FLexWrapper>
             </Container>
         </StyledHeader>

@@ -21,7 +21,7 @@ export const Main = () => {
                         </p>
                     </FLexWrapper>
                     <FLexWrapper>
-                        <BtnMain>
+                        <BtnMain as={'a'}>
                             <Icon iconId={'email'} />
                             Email me
                         </BtnMain>
