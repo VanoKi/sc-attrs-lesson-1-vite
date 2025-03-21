@@ -19,6 +19,15 @@ export const Slider = () => {
                         <Icon iconId={'arrow-right'}/>
                     </Pagination>
                 </Slide>
+                <Satisfaction direction={'column'}>
+                    <p>Satisfaction
+                        Clients</p>
+                    <p>100 %</p>
+                    <p>Clients On Worldwide</p>
+                    <p>+ 80</p>
+                    <p>Projects Done</p>
+                    <p>743</p>
+                </Satisfaction>
             </FLexWrapper>
         </StyledSlider>
     )
@@ -54,7 +63,9 @@ const Text = styled.p`
     font-size: 20px;
     line-height: 180%;
 `
-
 const Pagination = styled.span`
 
+`
+const Satisfaction = styled(FLexWrapper)`
+    
 `
