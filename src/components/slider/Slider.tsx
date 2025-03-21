@@ -12,7 +12,7 @@ export const Slider = () => {
                     <img src={clientFace} />
                 </ClientFace>
                 <Slide>
-                    <Quete>“</Quete>
+                    <Quite>“</Quite>
                     <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempore nostrum eligendi quaerat exercitationem unde optio dicta et, ducimus labore fuga quis pariatur voluptatibus incidunt excepturi modi ratione ad nihil.</Text>
                     <Pagination>
                         <Icon iconId={'arrow-left'}/>
@@ -51,8 +51,9 @@ const ClientFace = styled.div`
 const Slide = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
 `
-const Quete = styled.span`
+const Quite = styled.span`
     font-weight: 700;
     font-size: 100px;
     line-height: 120%;
@@ -62,10 +63,26 @@ const Text = styled.p`
     font-weight: 700;
     font-size: 20px;
     line-height: 180%;
+    margin-bottom: 20px;
 `
 const Pagination = styled.span`
-
+    ${Icon} {
+        cursor: pointer;
+    }
 `
 const Satisfaction = styled(FLexWrapper)`
-    
+    margin-left: 100px;
+    p {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+    }
+    p:nth-child(even) {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+        color: ${Theme.colors.accent};
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 `
