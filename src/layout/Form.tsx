@@ -12,7 +12,7 @@ export const Form = () => {
             <Label htmlFor={'email'}>Your email  address:</Label>
             <Field id={'email'} type={'email'} />
             <Label htmlFor={'area'}> Tell about the project: </Label>
-            <Field id={'area'} type={'text'} as={'textarea'} />
+            <Field id={'area'} type={'text'}/>
             <Button>
                 Send
                 <Icon iconId={'arrow-right'} />
@@ -22,8 +22,10 @@ export const Form = () => {
 };
 
 const StyledForm = styled.form`
+    min-height: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     ${Button} {
         display: flex;
         justify-content: space-between;
@@ -43,4 +45,14 @@ const Label = styled.label`
 `
 const Field = styled.input`
     background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    
+    &:focus {
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 180%;
+        color: rgba(255, 255, 255, 0.5);
+    }
 `

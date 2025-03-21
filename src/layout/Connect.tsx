@@ -14,7 +14,7 @@ export const Connect = () => {
                 <FLexWrapper justify={'space-between'}>
                     <Lets direction={'column'}>
                         <ConnectTitle>
-                            Let’s
+                            Let’s<br/>
                             Connect
                         </ConnectTitle>
                         <Social>
@@ -42,6 +42,7 @@ const ConnectTitle = styled.h2`
     font-weight: 700;
     font-size: 100px;
     line-height: 120%;
+    margin-bottom: 30px;
 `
 const Social = styled.ul`
     display: flex;
