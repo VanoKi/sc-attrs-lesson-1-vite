@@ -4,6 +4,7 @@ import {Theme} from "../styles/Theme.ts";
 import {Container} from "../components/Container.tsx";
 import {FLexWrapper} from "../components/FlexWrapper.tsx";
 import {Icon} from "../components/icon/Icon.tsx";
+import {Form} from "./Form.tsx";
 
 export const Connect = () => {
     const items = ['basket', 'up', 'youtube', 'linkedin', 'git']
@@ -26,7 +27,8 @@ export const Connect = () => {
                             ))}
                         </Social>
                     </Lets>
-                </FLexWrapper>
+                    <Form />
+                    </FLexWrapper>
             </Container>
         </StyledConnect>
     );
